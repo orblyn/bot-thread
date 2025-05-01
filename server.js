@@ -1,11 +1,10 @@
 const express = require('express');
 const app = express();
 
-app.get('/', (req, res) => {
-  res.send('Bot is running!');
+app.get("/", (req, res) => {
+  res.send("I'm alive!");
 });
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Server running on port ${port}`);
+app.listen(3000, () => {
+  console.log("Server is online on port 3000");
 });
